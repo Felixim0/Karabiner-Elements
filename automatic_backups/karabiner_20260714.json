@@ -1,0 +1,49 @@
+{
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Physical microphone/F5 key to real F5",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "consumer_key_code": "dictation",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f5",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f5",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f5",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f5" },
+                    "to": [{ "key_code": "vk_none" }]
+                }
+            ],
+            "name": "Default profile",
+            "selected": true
+        }
+    ]
+}

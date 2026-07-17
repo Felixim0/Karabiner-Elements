@@ -1,0 +1,393 @@
+{
+  "title": "Basic Windows-style shortcuts",
+  "rules": [
+    {
+      "description": "Basic Windows-style shortcuts (Win = Command)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "description": "Switch desktop left: Control+Command+Left -> Control+Left",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Switch desktop right: Control+Command+Right -> Control+Right",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Emoji popup: Command+Period -> Control+Command+Space",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Jump one word left: Control+Left -> Option+Left",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Jump one word right: Control+Right -> Option+Right",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Screenshot toolbar: Command+Shift+S -> Command+Shift+5",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Submit: Control+Enter -> Command+Enter",
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Bold: Control+B -> Command+B",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Italic: Control+I -> Command+I",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Underline: Control+U -> Command+U",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Close tab/window: Control+W -> Command+W",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Open last closed tab: Control+Shift+W -> Command+Shift+W",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "control",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Open Mission Control: Command+Tab -> Control+Up",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Copy: Control+C -> Command+C",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Paste: Control+V -> Command+V",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Find: Control+F -> Command+F",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Undo: Control+Z -> Command+Z",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Save: Control+S -> Command+S",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "description": "Refresh page: F5 -> Command+R",
+          "from": {
+            "key_code": "f5"
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
