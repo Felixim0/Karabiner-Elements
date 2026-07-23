@@ -322,6 +322,16 @@
                                         "modifiers": ["left_command"]
                                     }
                                 ],
+                                "conditions": [
+                                    {
+                                        "type": "device_unless",
+                                        "identifiers": [
+                                            {
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
