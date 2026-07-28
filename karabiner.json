@@ -405,6 +405,34 @@
                                 "type": "basic"
                             },
                             {
+                                "description": "Zoom in: Control+Plus -> Command+Plus",
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "equal_sign",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Zoom out: Control+Minus -> Command+Minus",
+                                "from": {
+                                    "key_code": "hyphen",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "hyphen",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
                                 "description": "Refresh page: F5 -> Command+R",
                                 "from": { "key_code": "f5" },
                                 "to": [
