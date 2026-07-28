@@ -248,7 +248,8 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^com\\.microsoft\\.VSCodeInsiders$",
                                             "^com\\.visualstudio\\.code\\.oss$",
-                                            "^com\\.vscodium\\.VSCodium$"
+                                            "^com\\.vscodium\\.VSCodium$",
+                                            "^com\\.googlecode\\.iterm2$"
                                         ]
                                     }
                                 ],
@@ -351,7 +352,8 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^com\\.microsoft\\.VSCodeInsiders$",
                                             "^com\\.visualstudio\\.code\\.oss$",
-                                            "^com\\.vscodium\\.VSCodium$"
+                                            "^com\\.vscodium\\.VSCodium$",
+                                            "^com\\.googlecode\\.iterm2$"
                                         ]
                                     }
                                 ],
