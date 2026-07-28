@@ -28,6 +28,7 @@ Perhaps in the future an AutoHotkey script could be added to make windows behave
 | Control+U | Command+U | Underline |
 | Control+W | Command+W | Close tab/window (except VS Code variants) |
 | Control+T | Command+T | New tab/window (except VS Code variants) |
+| Control+Shift+T | Command+Shift+T | Reopen closed tab/window |
 | Control+N | Command+N | New browser window (browser apps only) |
 | Control+Shift+W | Command+Shift+W | Open last closed tab/window |
 | Command+Tab | Control+Up | Open Mission Control |
