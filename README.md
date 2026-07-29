@@ -45,3 +45,25 @@ Perhaps in the future an AutoHotkey script could be added to make windows behave
 | Numpad 6 | Brightness Up | Increase display brightness |
 | Caps Lock | Escape | Send Escape when pressing Caps Lock |
 | F5 (fn_function_keys) | None (vk_none) | Disable raw F5 function-key output at fn layer |
+| Windows+V | Control+Shift+V | Open Maccy clipboard history (see Maccy setup below) |
+
+## Setting up Maccy with Windows+V
+
+Maccy is a lightweight clipboard manager for macOS. This config remaps `Windows+V` to `Control+Shift+V` so Maccy can intercept it without conflicts.
+
+**Steps:**
+
+1. Install Maccy from [GitHub](https://github.com/p0deje/Maccy/releases) or via Homebrew:
+
+2. Open Maccy and go to **Preferences** (or **Settings**)
+
+3. Navigate to the **Hotkeys** section
+
+4. Find "Open Clipboard History" and set the hotkey to:
+   - **Control + Shift + V**
+
+5. Restart Karabiner Elements or reload the config
+
+6. Press **Windows+V** to open your clipboard history
+
+**Note:** The global `Control+V` → `Command+V` (paste) binding remains unchanged and works globally.

@@ -487,6 +487,20 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "description": "Maccy clipboard: Windows+V -> Control+Shift+V",
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": { "mandatory": ["left_command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": ["left_control", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
