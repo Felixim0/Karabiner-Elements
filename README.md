@@ -47,6 +47,39 @@ Perhaps in the future an AutoHotkey script could be added to make windows behave
 | F5 (fn_function_keys) | None (vk_none) | Disable raw F5 function-key output at fn layer |
 | Windows+V | Control+Shift+V | Open Maccy clipboard history (see Maccy setup below) |
 
+## Terminal Ctrl+C Setup (VS Code + iTerm)
+
+### Goal
+
+- If text is selected: `Control+C` copies it.
+- If no text is selected: `Control+C` sends interrupt (`SIGINT`) to the running command.
+
+### 1) VS Code keybindings
+
+Set terminal `Control+C` bindings in `keybindings.json`:
+
+- Selected text: copy selection, then clear selection.
+- No selection: send `\u0003` using `workbench.action.terminal.sendSequence`.
+
+### 2) Karabiner exclusions
+
+In the `Copy: Control+C -> Command+C` manipulator, exclude these apps in `frontmost_application_unless`:
+
+- VS Code variants
+- iTerm (`^com\.googlecode\.iterm2$`)
+
+This prevents Karabiner from converting `Control+C` to `Command+C` in those terminals.
+
+### 3) Apply changes
+
+1. Reload VS Code window.
+2. Reload Karabiner-Elements (or restart it).
+
+### 4) Verify
+
+1. In VS Code terminal and iTerm, select text and press `Control+C` -> text copies.
+2. Run a long command, press `Control+C` with no selection -> command interrupts.
+
 ## Setting up Maccy with Windows+V
 
 Maccy is a lightweight clipboard manager for macOS. This config remaps `Windows+V` to `Control+Shift+V` so Maccy can intercept it without conflicts.
