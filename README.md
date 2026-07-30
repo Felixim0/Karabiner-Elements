@@ -46,6 +46,7 @@ Perhaps in the future an AutoHotkey script could be added to make windows behave
 | Caps Lock | Escape | Send Escape when pressing Caps Lock |
 | F5 (fn_function_keys) | None (vk_none) | Disable raw F5 function-key output at fn layer |
 | Windows+V | Control+Shift+V | Open Maccy clipboard history (see Maccy setup below) |
+| Windows+L | Control+Command+Q | Lock screen |
 
 ## Terminal Ctrl+C Setup (VS Code + iTerm)
 
