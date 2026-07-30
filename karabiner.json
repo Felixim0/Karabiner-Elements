@@ -997,7 +997,7 @@
                 ]
               },
               {
-                "description": "Caps Lock -> Escape (external keyboards only)",
+                "description": "Caps Lock -> Escape (Internal AND external Keyboards)",
                 "from": {
                   "key_code": "caps_lock"
                 },
@@ -1006,17 +1006,7 @@
                     "key_code": "escape"
                   }
                 ],
-                "type": "basic",
-                "conditions": [
-                  {
-                    "type": "device_unless",
-                    "identifiers": [
-                      {
-                        "is_built_in_keyboard": true
-                      }
-                    ]
-                  }
-                ]
+                "type": "basic"
               },
               {
                 "description": "Disable F5 (external keyboards only)",
