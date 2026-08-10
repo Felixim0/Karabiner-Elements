@@ -47,6 +47,7 @@ Perhaps in the future an AutoHotkey script could be added to make windows behave
 | F5 (fn_function_keys) | None (vk_none) | Disable raw F5 function-key output at fn layer |
 | Windows+V | Control+Shift+V | Open Maccy clipboard history (see Maccy setup below) |
 | Windows+L | Control+Command+Q | Lock screen |
+| Windows+Up | Control+Command+F | Toggle full screen (global) |
 
 ## Terminal Ctrl+C Setup (VS Code + iTerm)
 

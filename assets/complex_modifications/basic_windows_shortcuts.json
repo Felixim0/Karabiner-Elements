@@ -385,6 +385,27 @@
               ]
             }
           ]
+        },
+        {
+          "type": "basic",
+          "description": "Full screen: Command+Up -> Control+Command+F",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          ]
         }
       ]
     }

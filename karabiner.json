@@ -1060,6 +1060,27 @@
                     ]
                   }
                 ]
+              },
+              {
+                "description": "Full screen: Windows+Up -> Control+Command+F (global)",
+                "from": {
+                  "key_code": "up_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f",
+                    "modifiers": [
+                      "left_control",
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
               }
             ]
           }
